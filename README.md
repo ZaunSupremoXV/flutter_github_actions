@@ -1,68 +1,32 @@
 <div id="inicio"></div>
 
-## 📱 {{nome do repositorio}}
+## 👨‍💻 flutter_github_actions
 
-> Projeto desenvolvido em Flutter e utilizando o pacote firebase-tools do npm, com a finalidade de criar um website exemplo.
+> Exemplo de como utilizar CI/CD para buildar o projeto flutter para IOS e Android, utilizando o Github Actions. No exemplo CI, ele executa os testes do projeto flutter e verifica a estrutra do codigo. No exemplo CI/CD ele executa os testes e tambem faz a build para as plataformas. 
 
 ## 💻 Pré-requisitos
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
-* Você instalou a versão mais recente do `NodeJS`
 * Você instalou a versão mais recente do `Flutter`
 * Você tem uma máquina `Windows`. O código não foi testado em `Linux` e `MacOS`.
 
-## 🚀 Instalando {{nome do repositorio}}
+## 🚀 Instalando flutter_github_actions
 
-Para instalar o {{nome do repositorio}}, siga estas etapas:
+Para instalar o flutter_github_actions, siga estas etapas:
 
 Linux e macOS:
 ```
-npm install -g firebase-tools
+flutter pub get 
 ```
 
 Windows:
 ```
-npm install -g firebase-tools
+flutter pub get 
 ```
 
 
-## 👨‍💻 Obter FIREBASE_TOKEN para por no actions
-
-```
-npx firebase login:ci
-```
-
-Copiar o token que recebeu no terminal. Depois ir na página do repository no Github > Settings > Secrets > New repository secret.
-
-```
-NAME: FIREBASE_TOKEN
-VALUE: SEU TOKEN
-```
-
-
-## ☕ Usando {{nome do repositorio}}
-
-### Para iniciar o projeto no firebase, siga estas etapas:
-
-```
-npx firebase login
-```
-
-```
-npx firebase init
-```
-
-```
-npx firebase deploy --only hosting
-```
-
-### Para subir o projeto para o firebase, siga estas etapas:
-
-```
-npx firebase deploy --only hosting
-```
-
-### Para usar website, siga estas etapas:
+## ☕ Usando flutter_github_actions
+### Para executar o projeto:
 
 ```
 flutter run
